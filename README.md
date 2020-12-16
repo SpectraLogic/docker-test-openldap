@@ -159,7 +159,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | uid              | bender |
 | userPassword     | bender |
 
-### cn=Amy Wong+sn=Kroker,ou=people,dc=planetexpress,dc=com
+### cn=Amy Wong,ou=people,dc=planetexpress,dc=com
 
 Amy has a multi-valued DN
 
@@ -192,15 +192,17 @@ Amy has a multi-valued DN
 | cn               | ship_crew |
 | member           | cn=Turanga Leela,ou=people,dc=planetexpress,dc=com |
 | member           | cn=Philip J. Fry,ou=people,dc=planetexpress,dc=com |
+| member           | cn=Bender Bending Rodríguez,ou=people,dc=planetexpress,dc=com |
 
 
-### cn=robots,ou=people,dc=planetexpress,dc=com
+
+### cn=interns,ou=people,dc=planetexpress,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
 | objectClass      | Group |
-| cn               | robots |
-| member           | cn=Bender Bending Rodríguez,ou=people,dc=planetexpress,dc=com |
+| cn               | interns |
+| member           | cn=Amy Wong+sn=Kroker,ou=people,dc=planetexpress,dc=com |
 
 ## JAAS configuration
 
